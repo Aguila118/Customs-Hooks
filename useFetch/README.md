@@ -1,9 +1,14 @@
-#useFetch Hook
+#useForm Hook
 
 Ejemplo de uso:
 ```
-  const url = 'endpoint de una API';
-  const { data:null, loading: true, error:null } = useFetch(url);
-  
+  const initialForm = {
+    name: "",
+    age: 0
+    email: ''
+  };
+
+  const [ formValues, handleInputChange, reset ] = useForm(initialForm);
+
 ```
 
